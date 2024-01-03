@@ -1,7 +1,7 @@
 # B.O.O.P
 Button-Operated-Opening-Product
 
-Goal is to create a system that allows me to push my physical "open main door" button virtually from my phone using an Android App with the help of a microprocessor and Flask server.
+Goal is to create a system that allows me to push my physical "open main door" button virtually from my phone using an Android App with the help of a linear actuator, microprocessor, and Flask server.
 
 Hardware:
 1. Raspberry Pi 4B
