@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String RASPBERRY_PI_URL_L = "http://raspberry pi local ip:port/Endpoint identifier";// Replace with your Raspberry Pi's IP
 
     private boolean isLocal;
-    private static final String TOKEN = "*m4L2#PP1v1)("; // Use the same token as in Raspberry Pi code
+    private static final String TOKEN = "Enter the security token here to match with flask"; // Use the same token as in Raspberry Pi code
     private Button btn;
     private Button btn2;
 
