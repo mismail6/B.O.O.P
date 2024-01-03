@@ -26,8 +26,8 @@ lock = Lock()
 
 SECRET_TOKEN = "Your own secret token here"
 
-@app.route('/trigger-actuatorGRAGAS', methods=['POST'])
-def trigger_actuatorGRAGAS():
+@app.route('/your endpoint route name here', methods=['POST'])
+def your_endpoint():
     token = request.headers.get('Token')  
     if token == SECRET_TOKEN:
         with lock:
