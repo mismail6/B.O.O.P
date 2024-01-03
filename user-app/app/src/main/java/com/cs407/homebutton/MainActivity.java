@@ -20,8 +20,8 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String RASPBERRY_PI_URL =   "http://99.6.222.135:20759/trigger-actuatorGRAGAS";
-    private static final String RASPBERRY_PI_URL_L = "http://192.168.1.82:20759/trigger-actuatorGRAGAS";// Replace with your Raspberry Pi's IP
+    private static final String RASPBERRY_PI_URL =   "http://wifi public ip:port/Endpoint identifier";
+    private static final String RASPBERRY_PI_URL_L = "http://raspberry pi local ip:port/Endpoint identifier";// Replace with your Raspberry Pi's IP
 
     private boolean isLocal;
     private static final String TOKEN = "*m4L2#PP1v1)("; // Use the same token as in Raspberry Pi code
@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btn = (Button) findViewById(R.id.button);
         btn2 = (Button) findViewById(R.id.button2);
 
-        String A = "192.168"; // Replace with your string A
-        String B = "10.0.0";   // Replace with your string B (exactly 7 characters)
+        String A = "192.168"; // local wifi
+        String B = "10.0.0";   // local wifi subnet
         String ip = getLocalIpAddress(this);
         isLocal = false;
         if ( ip!=null && isLocalURL(ip, A, B)) {
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         if (ip.length() >= 7) { // Ensure A has at least 7 characters
             String firstSevenIP = ip.substring(0, 7); // Extract the first 7 characters of IP
             String firstSixIP = ip.substring(0, 6); // Extract the first 6 characters of IP
-            if ((firstSevenIP.equals(A)) || (firstSixIP.equals(B)) || ip.equals("10.0.2.16")) {
+            if ((firstSevenIP.equals(A)) || (firstSixIP.equals(B)) || ip.equals("10.0.2.16")) { //10.0.2.16 was to test with android emulator
                 //Log.d("Entered Local:", "Enetered Local???");
                 return true;
             }
