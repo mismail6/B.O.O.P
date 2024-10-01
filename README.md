@@ -20,4 +20,7 @@ Additional configurations:
 Enabling port forwarding on the router that is connected to the Raspberry Pi.
 Setting up Firewall rules on the Raspberry Pi iptables.
 
-Feel free to email me at mismail6@wisc.edu if you have any questions.
+Here is what it looks like in action:
+https://www.youtube.com/shorts/q7eWrnLUQiY
+
+Feel free to email me at ismailjan12@gmail.com if you have any questions.
